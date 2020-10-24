@@ -1,0 +1,10 @@
+{
+  "title": "CartQL - GraphQL Shopping Cart API | Docs",
+  "url": "https://docs.cartql.com",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "cartql/docs",
+  "twitter": "@CartQL"
+}
