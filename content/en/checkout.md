@@ -41,16 +41,16 @@ If you already set the `email` and `notes` on a cart, they will be used.
 
 ## `AddressInput!`
 
-| Field        | Type                                    | Description                                    |
-| ------------ | --------------------------------------- | ---------------------------------------------- |
-| `company`    | `String`                                | A company name, if applicable for the address. |
-| `name`       | `String!`                               | The recipient name.                            |
-| `line1`      | `String!`                               | The address line 1.                            |
-| `line2`      | `String`                                | The address line 2.                            |
-| `city`       | `String!`                               | The address city.                              |
-| `state`      | `String`                                | The address state.                             |
-| `postalCode` | `String!` The addess post, or zip code. |
-| `country`    | `String!`                               | The address country.                           |
+| Field        | Type      | Description                                    |
+| ------------ | --------- | ---------------------------------------------- |
+| `company`    | `String`  | A company name, if applicable for the address. |
+| `name`       | `String!` | The recipient name.                            |
+| `line1`      | `String!` | The address line 1.                            |
+| `line2`      | `String`  | The address line 2.                            |
+| `city`       | `String!` | The address city.                              |
+| `state`      | `String`  | The address state.                             |
+| `postalCode` | `String!` | The addess post, or zip code.                  |
+| `country`    | `String!` | The address country.                           |
 
 ## Example
 
