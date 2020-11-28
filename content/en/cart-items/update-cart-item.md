@@ -50,6 +50,7 @@ mutation {
       cartId: "ck5r8d5b500003f5o2aif0v2b"
       id: "5e3293a3462051"
       quantity: 2
+      metadata: { engraving: "GraphQL" }
     }
   ) {
     id
@@ -60,6 +61,7 @@ mutation {
     subTotal {
       formatted
     }
+    metadata
   }
 }
 ```
@@ -78,6 +80,9 @@ mutation {
       "totalUniqueItems": 1,
       "subTotal": {
         "formatted": "$40.00"
+      },
+      "metadata": {
+        "engraving": "GraphQL"
       }
     }
   }

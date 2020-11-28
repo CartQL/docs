@@ -34,16 +34,16 @@ The `setItems` mutation will replace all existing items.
 
 ## `[SetCartItemInput!]!`
 
-| Argument      | Type                     | Description                           |
-| ------------- | ------------------------ | ------------------------------------- |
-| `id`          | `ID!`                    | The `id` of the item you are adding.  |
-| `name`        | `String`                 | Give items a name.                    |
-| `description` | `String`                 | Give items a description.             |
-| `type`        | `CartItemType = SKU`     | `SKU` _(default)_, `TAX`, `SHIPPING`. |
-| `images`      | `[String]`               | Any URLs to images for the item.      |
-| `price`       | `Int!`                   | The item price in cents.              |
-| `quantity`    | `Int = 1`                | Quantity of items to add.             |
-| `attributes`  | `[CustomAttributeInput]` | `key`/`value` custom properties.      |
+| Argument      | Type                 | Description                            |
+| ------------- | -------------------- | -------------------------------------- |
+| `id`          | `ID!`                | The `id` of the item you are adding.   |
+| `name`        | `String`             | Give items a name.                     |
+| `description` | `String`             | Give items a description.              |
+| `type`        | `CartItemType = SKU` | `SKU` _(default)_, `TAX`, `SHIPPING`.  |
+| `images`      | `[String]`           | Any URLs to images for the item.       |
+| `price`       | `Int!`               | The item price in cents.               |
+| `quantity`    | `Int = 1`            | Quantity of items to add.              |
+| `metadata`    | `Json`               | Custom meta object array for the cart. |
 
 ## Example
 
@@ -63,6 +63,7 @@ mutation {
           images: ["full-logo-tee.png"]
           price: 2000
           quantity: 10
+          metadata: { customEngraving: "GraphQL" }
         }
         {
           id: "5e3293a3462051"
@@ -83,6 +84,7 @@ mutation {
       lineTotal {
         amount
       }
+      metadata
     }
   }
 }
@@ -103,6 +105,9 @@ mutation {
           "name": "Full Logo Tee",
           "lineTotal": {
             "amount": 20000
+          },
+          "metadata": {
+            "customEngraving": "GraphQL"
           }
         },
         {

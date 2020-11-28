@@ -37,7 +37,7 @@ You must provide a unique `id` for cart items, otherwise you will overwrite any 
 | `images`      | `[String]`                                 | Any URLs to images for the item.              |
 | `price`       | `Int!`                                     | The item price in cents.                      |
 | `quantity`    | `Int = 1`                                  | Quantity of items to add.                     |
-| `attributes`  | `[CustomAttributeInput]`                   | `key`/`value` custom properties.              |
+| `metadata`    | `Json`                                     | Custom meta object array for the cart.        |
 
 <alert type="info">
 
@@ -61,6 +61,7 @@ mutation {
       images: ["full-logo-tee.png"]
       price: 2000
       quantity: 10
+      metadata: { customEngraving: "GraphQL" }
     }
   ) {
     id
@@ -85,6 +86,7 @@ mutation {
         formatted
       }
       quantity
+      metadata
     }
   }
 }
@@ -119,7 +121,10 @@ mutation {
             "amount": 20000,
             "formatted": "$200.00"
           },
-          "quantity": 10
+          "quantity": 10,
+          "metadata": {
+            "customEngraving": "GraphQL"
+          }
         }
       ]
     }
