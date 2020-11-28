@@ -140,15 +140,6 @@ Carts are the core concept of CartQL. Bring your own PIM, and use CartQL to mana
 | `createdAt`        | `Date!`                           | The date and time the cart was created.                                                                               |
 | `updatedAt`        | `Date!`                           | The date and time the cart was created.                                                                               |
 
-## `CustomCartAttribute`
-
-It is often useful to save user specific state in the cart for UI, or checkout purposes.
-
-| Field   | Type      | Description                         |
-| ------- | --------- | ----------------------------------- |
-| `key`   | `String!` | Custom attributes must have a key.  |
-| `value` | `String`  | The value of your custom attribute. |
-
 ## `[CartItem!]!`
 
 Each `CartItem` is made up of the values you provide when adding to cart. These items are provided by you, and only an `id`, and `price` is required for items to be added.
