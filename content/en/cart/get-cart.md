@@ -122,23 +122,23 @@ Learn more about managing [currencies](/currency).
 
 Carts are the core concept of CartQL. Bring your own PIM, and use CartQL to manage cart metadata.
 
-| Field              | Type                                              | Description                                                                                                           |
-| ------------------ | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `id`               | `ID!`                                             | A custom unique identifer for the cart provided by you.                                                               |
-| `currency`         | [`Currency!`](/currency#currency)                 | The current currency details of the cart.                                                                             |
-| `email`            | `String`                                          | The customer email who the cart belongs to.                                                                           |
-| `totalItems`       | `Int`                                             | The number of total items in the cart.                                                                                |
-| `totalUniqueItems` | `Int`                                             | The number of total unique items in the cart.                                                                         |
-| `items`            | [`[CartItem!]!`](#cartitem)                       | The items in the cart.                                                                                                |
-| `subTotal`         | [`Money!`](/currency#money)                       | Sum of all SKU items, excluding discounts, taxes, shipping, including the raw/formatted amounts and currency details. |
-| `shippingTotal`    | [`Money!`](/currency#money)                       | The cart total for all items with type `SHIPPING`, including the raw/formatted amounts and currency details.          |
-| `taxTotal`         | [`Money!`](/currency#money)                       | The cart total for all items with type `TAX`, including the raw/formatted amounts and currency details.               |
-| `grandTotal`       | [`Money!`](/currency#money)                       | The grand total for all items, including shipping, including the raw/formatted amounts and currency details.          |  | `isEmpty` | `Boolean` | A simple helper method to check if the cart is empty. |
-| `abandoned`        | `Boolean`                                         | A simple helper method to check if the cart hasn't been updated in the last 2 hours.                                  |
-| `attributes`       | [`[CustomCartAttribute!]!`](#customcartattribute) | Custom key/value attributes array for the cart.                                                                       |
-| `notes`            | `String`                                          | Any notes related to the cart/checkout.                                                                               |
-| `createdAt`        | `Date!`                                           | The date and time the cart was created.                                                                               |
-| `updatedAt`        | `Date!`                                           | The date and time the cart was created.                                                                               |
+| Field              | Type                              | Description                                                                                                           |
+| ------------------ | --------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `id`               | `ID!`                             | A custom unique identifer for the cart provided by you.                                                               |
+| `currency`         | [`Currency!`](/currency#currency) | The current currency details of the cart.                                                                             |
+| `email`            | `String`                          | The customer email who the cart belongs to.                                                                           |
+| `totalItems`       | `Int`                             | The number of total items in the cart.                                                                                |
+| `totalUniqueItems` | `Int`                             | The number of total unique items in the cart.                                                                         |
+| `items`            | [`[CartItem!]!`](#cartitem)       | The items in the cart.                                                                                                |
+| `subTotal`         | [`Money!`](/currency#money)       | Sum of all SKU items, excluding discounts, taxes, shipping, including the raw/formatted amounts and currency details. |
+| `shippingTotal`    | [`Money!`](/currency#money)       | The cart total for all items with type `SHIPPING`, including the raw/formatted amounts and currency details.          |
+| `taxTotal`         | [`Money!`](/currency#money)       | The cart total for all items with type `TAX`, including the raw/formatted amounts and currency details.               |
+| `grandTotal`       | [`Money!`](/currency#money)       | The grand total for all items, including shipping, including the raw/formatted amounts and currency details.          |  | `isEmpty` | `Boolean` | A simple helper method to check if the cart is empty. |
+| `abandoned`        | `Boolean`                         | A simple helper method to check if the cart hasn't been updated in the last 2 hours.                                  |
+| `metadata`         | [`Json`](/metadata)               | Custom metadata for the cart.                                                                                         |
+| `notes`            | `String`                          | Any notes related to the cart/checkout.                                                                               |
+| `createdAt`        | `Date!`                           | The date and time the cart was created.                                                                               |
+| `updatedAt`        | `Date!`                           | The date and time the cart was created.                                                                               |
 
 ## `CustomCartAttribute`
 

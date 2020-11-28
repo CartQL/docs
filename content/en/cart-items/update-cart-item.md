@@ -21,16 +21,17 @@ The `updateItem` mutation will always return the updated [`Cart`](/graphql-types
 
 You can update items in the cart at any time.
 
-| Argument      | Type           | Description                                  |
-| ------------- | -------------- | -------------------------------------------- |
-| `cartId`      | `ID!`          | The `id` of the cart you the item belongs to |
-| `id`          | `ID!`          | The `id` of the item you are updating        |
-| `name`        | `String`       | Set a new item name                          |
-| `description` | `String`       | Set a new item description                   |
-| `type`        | `CartItemType` | `SKU`, `TAX`, `SHIPPING`                     |
-| `images`      | `[String]`     | Update any image URLs                        |
-| `price`       | `Int`          | Set a new unit price                         |
-| `quantity`    | `Int`          | Set a new quantity                           |
+| Argument      | Type                | Description                                  |
+| ------------- | ------------------- | -------------------------------------------- |
+| `cartId`      | `ID!`               | The `id` of the cart you the item belongs to |
+| `id`          | `ID!`               | The `id` of the item you are updating        |
+| `name`        | `String`            | Set a new item name                          |
+| `description` | `String`            | Set a new item description                   |
+| `type`        | `CartItemType`      | `SKU`, `TAX`, `SHIPPING`                     |
+| `images`      | `[String]`          | Update any image URLs                        |
+| `price`       | `Int`               | Set a new unit price                         |
+| `quantity`    | `Int`               | Set a new quantity                           |
+| `metadata`    | [`Json`](/metadata) | Custom meta object                           |
 
 <alert type="info">
 

@@ -25,7 +25,7 @@ The `updateCart` mutation will always return the updated [`Cart`](/graphql-types
 | `currency` | [`CurrencyInput`](/cart/get-cart#currencyinput) | Update the cart currency.                  |
 | `email`    | `String`                                        | Update the email associated with the cart. |
 | `notes`    | `String`                                        | Let customer save notes for the cart.      |
-| `metadata` | `Json`                                          | Custom meta object array for the cart.     |
+| `metadata` | [`Json`](/metadata)                             | Custom meta object array for the cart.     |
 
 <alert type="info">
 

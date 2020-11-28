@@ -37,7 +37,7 @@ You must provide a unique `id` for cart items, otherwise you will overwrite any 
 | `images`      | `[String]`                                 | Any URLs to images for the item.              |
 | `price`       | `Int!`                                     | The item price in cents.                      |
 | `quantity`    | `Int = 1`                                  | Quantity of items to add.                     |
-| `metadata`    | `Json`                                     | Custom meta object array for the cart.        |
+| `metadata`    | [`Json`](/metadata)                        | Custom meta object for the cart.              |
 
 <alert type="info">
 

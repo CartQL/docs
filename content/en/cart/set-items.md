@@ -43,7 +43,7 @@ The `setItems` mutation will replace all existing items.
 | `images`      | `[String]`           | Any URLs to images for the item.       |
 | `price`       | `Int!`               | The item price in cents.               |
 | `quantity`    | `Int = 1`            | Quantity of items to add.              |
-| `metadata`    | `Json`               | Custom meta object array for the cart. |
+| `metadata`    | [`Json`](/metadata)  | Custom meta object array for the cart. |
 
 ## Example
 
