@@ -17,7 +17,7 @@ CartQL is a headless GraphQL shopping cart, and checkout API built to work with 
 
 However you handle carts, on the frontend or as a separate microservice, CartQL was designed to fit right in.
 
-### Endpoint
+### Endpoint
 
 ```
 https://api.cartql.com
