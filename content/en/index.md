@@ -22,3 +22,11 @@ However you handle carts, on the frontend or as a separate microservice, CartQL 
 <list :items="items"></list>
 
 It's free to use, or upgrade for webhooks for advanced cart, and cart recovery workflows.
+
+## Endpoint
+
+You can use CartQL for free, without websites, and without authentication.
+
+```
+https://api.cartql.com
+```
