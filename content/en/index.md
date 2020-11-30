@@ -17,16 +17,14 @@ CartQL is a headless GraphQL shopping cart, and checkout API built to work with 
 
 However you handle carts, on the frontend or as a separate microservice, CartQL was designed to fit right in.
 
-## Features
-
-<list :items="items"></list>
-
-It's free to use, or upgrade for webhooks for advanced cart, and cart recovery workflows.
-
-## Endpoint
-
-You can use CartQL for free, without websites, and without authentication.
+### Endpoint
 
 ```
 https://api.cartql.com
 ```
+
+It's free to use, or upgrade for webhooks for advanced cart, and cart recovery workflows.
+
+## Features
+
+<list :items="items"></list>
