@@ -12,9 +12,17 @@ For example, when a cart reaches a certain amount you may want to automatically 
 
 <alert type="info">
 
-Webhooks are currently invite only, and are a paid upgrade.
+Webhooks are currently in BETA. [Get a API token](https://cartql.com/register)
 
 </alert>
+
+## Using your token
+
+You must pass a `Authorization` header with your token with each request you want to invoke your webhooks.
+
+```
+Authorization: Bearer <api-key-here>
+```
 
 ## Cart
 
